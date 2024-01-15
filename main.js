@@ -1,8 +1,4 @@
-// document.querySelector("#root").innerHTML = "<h1><u>Hey there</u></h1>";
 
-// const age = prompt ("How old are you?");
-
-// alert (age + " - " + "You are old enough");
 
 // ----------------------------------------------------------------
 // let numberOne = prompt("Type a number...");
