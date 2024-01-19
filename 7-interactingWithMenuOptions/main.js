@@ -1,3 +1,9 @@
-const age = prompt("How old are you?");
+let sip = [];
 
-alert(age + " - " + "You are old enough");
+for (let i = 0; i <= 2; i++) {
+  let prp = prompt("type...");
+
+  sip[i] = prp;
+}
+
+alert(sip.join(", "));
