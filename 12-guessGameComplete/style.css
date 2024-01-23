@@ -19,7 +19,7 @@ main {
 	padding: 2rem;
 	margin: 20rem auto;
 }
-#hide {
+.hide {
 	display: none;
 }
 .firstScreen form {

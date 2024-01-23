@@ -23,10 +23,10 @@ let randomNumber = Math.round(Math.random() * 10);
 let count = 1;
 
 // while loop para continuar a contagem até que o número seja encontrado.
-// while (Number(result) != randomNumber) {
-// 	result = Number(prompt("Wrong, try again."));
-// 	randomNumber = Math.round(Math.random() * 10);
-// 	count++;
+while (Number(result) != randomNumber) {
+	result = Number(prompt("Wrong, try again."));
+	randomNumber = Math.round(Math.random() * 10);
+	count++;
 
 	// variavel para obter valor booleano.
 	let match = Number(result) == randomNumber;
