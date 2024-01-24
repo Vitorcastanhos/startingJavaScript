@@ -1,19 +1,14 @@
-let inputNumber = document.querySelector("#inputNumber");
-
+let firstScreen = document.querySelector(".firstScreen");
+let secondScreen = document.querySelector(".secondScreen");
 let randomNumber;
-
+let btn = document.querySelector("#btn");
+let reset = document.querySelector("#reset");
 // contador de tentativas.
 let count = 1;
 
-function empty(event) {
+function handleClick(event) {
 	event.preventDefault();
-	if (Number(inputNumber.value) == "") {
-		document.querySelector(".error").innerText = `Please, enter a number.`;
-	}
-	handleClick();
-}
 
-function handleClick() {
 	inputNumber = document.querySelector("#inputNumber");
 	console.log(inputNumber.value);
 
@@ -22,11 +17,18 @@ function handleClick() {
 	console.log(randomNumber);
 
 	if (Number(inputNumber.value) == randomNumber) {
-		document.querySelector(".firstScreen").classList.add("hide");
-		document.querySelector(".secondScreen").classList.remove("hide");
+		firstScreen.classList.add("hide");
+		secondScreen.classList.remove("hide");
 
-		document.querySelector(".secondScreen h2").innerText = `acertou em ${count} tentativas`;
+		secondScreen.querySelector("h2").innerText = `You got it with ${count} attempts. Congrats!`;
 	}
-
+	inputNumber.value = "";
 	count++;
 }
+
+btn.addEventListener("click", handleClick);
+reset.addEventListener("click", function () {
+	firstScreen.classList.remove("hide");
+	secondScreen.classList.add("hide");
+	count = 1;
+});

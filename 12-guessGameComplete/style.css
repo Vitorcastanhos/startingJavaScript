@@ -22,6 +22,13 @@ main {
 .hide {
 	display: none;
 }
+.firstScreen h1 {
+	margin-bottom: 1.5rem;
+	font-size: 3rem;
+}
+.firstScreen p {
+	font-size: 2rem;
+}
 .firstScreen form {
 	display: flex;
 	justify-content: center;
@@ -38,10 +45,13 @@ button {
 	border-radius: 4px 0 0 4px;
 }
 .firstScreen button {
+	font-size: 1.6rem;
+	display: block;
 	font-weight: bold;
 	border-radius: 0 4px 4px 0;
 }
 .secondScreen button {
+	font-size: 1.6rem;
 	margin-top: 4.8rem;
 	border-radius: 4px 4px 4px 4px;
 	font-weight: bold;
